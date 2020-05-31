@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="POM Test Suite">
+
+    <listeners>
+        <listener class-name="com.netbanking.utilities.Reporting"/>
+    </listeners>
+
+    <test name="POM Test" >
+
+        <parameter name="browser" value="chrome"/>
+<!--        <parameter name="browser" value="firefox"/>-->
+
+        <packages>
+            <package name="com.netbanking.*"/>
+        </packages>
+
+        <classes>
+            <class name="com.netbanking.testCases.LoginTestClass"/>
+        </classes>
+
+        
+    </test>
+
+</suite>

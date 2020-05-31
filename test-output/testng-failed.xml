@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [POM Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.netbanking.utilities.Reporting"/>
+  </listeners>
+  <test name="POM Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.netbanking.testCases.LoginTestClass">
+        <methods>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.netbanking.testCases.LoginTestClass -->
+    </classes>
+  </test> <!-- POM Test(failed) -->
+</suite> <!-- Failed suite [POM Test Suite] -->
