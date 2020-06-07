@@ -24,6 +24,9 @@ public class LoginPage
     @FindBy(name = "btnLogin")
     WebElement btnLogin;
 
+    @FindBy(xpath = "//a[contains(text(),'Log out')]")
+    WebElement logoutBtn;
+
     public void setTextUsername(String username)
     {
         textUsername.sendKeys(username);
@@ -37,6 +40,11 @@ public class LoginPage
     public void clickLoginBtn()
     {
         btnLogin.click();
+    }
+
+    public void clickLogOutBtn()
+    {
+        logoutBtn.click();
     }
 
 
