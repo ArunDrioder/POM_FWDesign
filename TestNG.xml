@@ -2,7 +2,7 @@
 <suite name="POM Test Suite">
 
     <listeners>
-        <listener class-name="com.netbanking.utilities.Reporting"/>
+        <listener class-name="com.netbanking.utilities.ExtentReporting"/>
     </listeners>
 
     <test name="POM Test" >
@@ -15,7 +15,7 @@
         </packages>
 
         <classes>
-            <class name="com.netbanking.testCases.LoginTestClass"/>
+            <class name="com.netbanking.testCases.LoginTest"/>
         </classes>
 
         

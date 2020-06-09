@@ -4,48 +4,51 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+public class LoginPage {
 
-public class LoginPage
-{
     WebDriver driver;
 
     public LoginPage(WebDriver webDriver)
     {
         driver = webDriver;
-        PageFactory.initElements(webDriver,this);
-
+        PageFactory.initElements(webDriver, this);
+        // TODO Auto-generated constructor stub
     }
+
     @FindBy(name = "uid")
-    WebElement textUsername;
+    public WebElement userIDElement;
 
     @FindBy(name = "password")
-    WebElement textPassword;
+    public WebElement passwordElement;
 
     @FindBy(name = "btnLogin")
-    WebElement btnLogin;
+    public WebElement loginBtnElement;
 
     @FindBy(xpath = "//a[contains(text(),'Log out')]")
     WebElement logoutBtn;
 
-    public void setTextUsername(String username)
+
+    public void setUserID(String userID)
     {
-        textUsername.sendKeys(username);
+        userIDElement.sendKeys(userID);
     }
 
-    public void setTextPassword(String password)
+    public void setPassword(String password)
     {
-        textPassword.sendKeys(password);
+        passwordElement.sendKeys(password);
     }
 
-    public void clickLoginBtn()
+    public void clickLogin()
     {
-        btnLogin.click();
+        loginBtnElement.click();
     }
+
 
     public void clickLogOutBtn()
     {
         logoutBtn.click();
     }
+
 
 
 
