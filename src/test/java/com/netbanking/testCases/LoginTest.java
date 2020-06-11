@@ -32,7 +32,9 @@ public class LoginTest extends BaseClass
         else
         {
             Assert.assertTrue(true);
-            loginPage.clickLogOutBtn();
+
+            loginPage.clickLogOut();
+
 
             driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
             driver.switchTo().alert().accept();

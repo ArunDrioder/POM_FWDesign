@@ -16,6 +16,8 @@
 
         <classes>
             <class name="com.netbanking.testCases.LoginTest"/>
+            <class name="com.netbanking.testCases.HomePageTest"/>
+
         </classes>
 
         
