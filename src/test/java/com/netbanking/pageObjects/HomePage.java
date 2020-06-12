@@ -1,5 +1,6 @@
 package com.netbanking.pageObjects;
 
+import com.netbanking.testCases.BaseClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

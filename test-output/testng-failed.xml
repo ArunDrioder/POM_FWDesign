@@ -7,13 +7,13 @@
   <test name="POM Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.netbanking.testCases.LoginTest">
+      <class name="com.netbanking.testCases.NewCustomerTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="excelLogin" invocation-numbers="1 2 3"/>
+          <include name="addCustomer" invocation-numbers="1 2 3 4 5 6"/>
         </methods>
-      </class> <!-- com.netbanking.testCases.LoginTest -->
+      </class> <!-- com.netbanking.testCases.NewCustomerTest -->
     </classes>
   </test> <!-- POM Test(failed) -->
 </suite> <!-- Failed suite [POM Test Suite] -->
